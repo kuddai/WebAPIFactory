@@ -8,8 +8,9 @@ import json
 class TestSequenceFunctions(unittest.TestCase):
 
     def setUp(self):
+        #fixture data
+        #api description https://wiki.teamfortress.com/wiki/WebAPI/GetMatchDetails        
         with open("dot2_scheme.json") as file:
-            #fixture data
             dota2_scheme = json.loads(file.read())  
             self.dota2 = web_API_factory.WebAPIFactory(dota2_scheme)      
             

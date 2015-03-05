@@ -1,55 +1,21 @@
 {
-    "methods": {
-        "details": {
-            "args": {
-                "key": {
-                    "default": "your_steam_key_here", 
-                    "required": "yes"
-                }, 
-                "match_id": {
-                    "required": "yes"
-                }
-            }, 
-            "route": "IDOTA2Match_570/GetMatchDetails/v1/"
-        }, 
-        "heroes": {
-            "args": {
-                "itemizedonly": {}, 
-                "key": {
-                    "default": "your_steam_key_here", 
-                    "required": "yes"
-                }, 
-                "language": {}
-            }, 
-            "route": "IEconDOTA2_570/GetHeroes/v1/"
-        }, 
-        "history": {
-            "args": {
-                "account_id": {}, 
-                "date_max": {}, 
-                "date_min": {}, 
-                "game_mode": {
-                    "aliases": {
-                        "All Pick": "1", 
-                        "All Random": "5", 
-                        "Captain's Draft": "16", 
-                        "Captain's Mode": "2", 
-                        "Compendium Matchmaking": "14", 
-                        "Diretide": "7", 
-                        "Intro": "6", 
-                        "Least Played": "12", 
-                        "Mid Only": "11", 
-                        "New Player Pool": "13", 
-                        "None": "0", 
-                        "Random Draft": "3", 
-                        "Reverse Captain's Mode": "8", 
-                        "Single Draft": "4", 
-                        "The Greeviling": "9", 
-                        "Tutorial": "10"
-                    }
-                }, 
-                "hero_id": {
-                    "aliases": {
+    "url": "https://api.steampowered.com/",
+    "methods": 
+    {
+        "history": 
+        {
+            "route": "IDOTA2Match_570/GetMatchHistory/V001/",
+            "args": 
+            {
+                "key": 
+                {
+                   "default": "your_steam_key_here",
+                   "required": "yes"
+                },
+                "hero_id": 
+                {
+                    "aliases": 
+                    {    
                         "Abaddon": "102", 
                         "Abyssal Underlord": "108", 
                         "Alchemist": "73", 
@@ -162,37 +128,92 @@
                         "Witch Doctor": "30", 
                         "Zeus": "22"
                     }
-                }, 
-                "key": {
-                    "default": "your_steam_key_here", 
-                    "required": "yes"
-                }, 
-                "league_id": {}, 
-                "matches_requested": {}, 
-                "min_players": {}, 
-                "skill": {
-                    "aliases": {
-                        "Any": "0", 
-                        "High": "2", 
-                        "Normal": "1", 
+                },
+                "game_mode": 
+                {
+                    "aliases": 
+                    {
+                        "None": "0",
+                        "All Pick": "1",
+                        "Captain's Mode": "2",
+                        "Random Draft": "3",
+                        "Single Draft": "4",
+                        "All Random": "5",
+                        "Intro": "6",
+                        "Diretide": "7",
+                        "Reverse Captain's Mode": "8",
+                        "The Greeviling": "9",
+                        "Tutorial": "10",
+                        "Mid Only": "11",
+                        "Least Played": "12",
+                        "New Player Pool": "13",
+                        "Compendium Matchmaking": "14",
+                        "Captain's Draft": "16"
+                    }
+                },
+                "skill": 
+                {
+                    "aliases": 
+                    {
+                        "Any": "0",
+                        "Normal": "1",
+                        "High": "2",
                         "very High": "3"
                     }
-                }, 
-                "start_at_match_id": {}, 
+                },
+                "date_min": {},
+                "date_max": {},
+                "min_players": {},
+                "account_id": {},
+                "league_id": {},
+                "start_at_match_id": {},
+                "matches_requested": {},
                 "tournament_games_only": {}
-            }, 
-            "route": "IDOTA2Match_570/GetMatchHistory/V001/"
-        }, 
-        "leagues": {
-            "args": {
-                "key": {
-                    "default": "your_steam_key_here", 
+            }
+        },
+        "details": 
+        {
+            "route": "IDOTA2Match_570/GetMatchDetails/v1/",
+            "args": 
+            {
+                "key": 
+                {
+                   "default": "your_steam_key_here",
+                   "required": "yes"
+                },
+                "match_id": 
+                { 
                     "required": "yes"
-                }, 
+                }
+            }
+        },
+        "heroes":
+        {
+            "route": "IEconDOTA2_570/GetHeroes/v1/",
+            "args":
+            {
+                "key": 
+                {
+                   "default": "your_steam_key_here",
+                   "required": "yes"
+                },
+                "language": {},
+                "itemizedonly" : {}
+            }
+        },
+        "leagues": 
+        {
+            "route": "IDOTA2Match_570/GetLeagueListing/v1/",
+            "args": 
+            {
+                "key": 
+                {
+                   "default": "your_steam_key_here",
+                   "required": "yes"
+                },
                 "language": {}
-            }, 
-            "route": "IDOTA2Match_570/GetLeagueListing/v1/"
-        }
-    }, 
-    "url": "https://api.steampowered.com/"
+            }
+        }        
+    }
+    
 }
