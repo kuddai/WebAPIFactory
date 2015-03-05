@@ -3,7 +3,7 @@
         "details": {
             "args": {
                 "key": {
-                    "default": "EDE9D1BECFFA03CDBEA638475F315DBA", 
+                    "default": "your_steam_key_here", 
                     "required": "yes"
                 }, 
                 "match_id": {
@@ -16,7 +16,7 @@
             "args": {
                 "itemizedonly": {}, 
                 "key": {
-                    "default": "EDE9D1BECFFA03CDBEA638475F315DBA", 
+                    "default": "your_steam_key_here", 
                     "required": "yes"
                 }, 
                 "language": {}
@@ -164,7 +164,7 @@
                     }
                 }, 
                 "key": {
-                    "default": "EDE9D1BECFFA03CDBEA638475F315DBA", 
+                    "default": "your_steam_key_here", 
                     "required": "yes"
                 }, 
                 "league_id": {}, 
@@ -186,7 +186,7 @@
         "leagues": {
             "args": {
                 "key": {
-                    "default": "EDE9D1BECFFA03CDBEA638475F315DBA", 
+                    "default": "your_steam_key_here", 
                     "required": "yes"
                 }, 
                 "language": {}
